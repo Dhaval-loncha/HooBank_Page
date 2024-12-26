@@ -14,7 +14,7 @@
 
 ## 💻 Technologies Used:
 - **Tailwind CSS** for styling
-- **HTML5** and **CSS3** for structuring and layout
+- **React JS** for structuring and layout
 - Optimized images for better performance and faster load times
 
 ---
@@ -35,7 +35,7 @@ This project serves as a demonstration of my web development skills, focusing on
 ## 🔧 Installation:
 To run this project locally, clone the repository and run the following commands:
 ```bash
-git clone https://github.com/yourusername/myhoobankpage.git
+git clone https://github.com/Dhaval-loncha/HooBank_Page.git
 cd myhoobankpage
 npm install
 npm run dev
