@@ -29,20 +29,18 @@ const Navbar = () => {
 					scroll ? "fixed z-[50] bg-black-gradient-2 py-2 pr-1 top-5 object-contain rounded" : ""
 				}`}
 			>
-				<img src={logo} alt="hoobank" className={`w-[124px] h-[32px] `} />
+				<a href="https://dhaval-hoobank-page.netlify.app/">
+					<img src={logo} alt="hoobank" className={`w-[124px] h-[32px] `} />
+				</a>
 			</div>
-			<div
-				className={`${
-					scroll ? "fixed z-[50] p-2 top-5 right-14 object-contain rounded" : ""
-				}`}
-			>
+			<div className={`${scroll ? "fixed z-[50] p-2 top-5 right-14 object-contain rounded" : ""}`}>
 				<ul className="list-none sm:flex hidden justify-end items-center flex-1">
 					{navLinks.map((nav, index) => (
 						<li
 							key={nav.id}
-							className={`font-poppins font-normal cursor-pointer text-[16px] text-white mr-10  ${
+							className={`font-poppins font-normal cursor-pointer text-[16px] text-white mr-10   ${
 								index === navLinks.length - 1 ? "mr-0" : "mr-10"
-							} ${scroll ? "bg-black-gradient p-1 rounded" : ""}`}
+							} ${scroll ? "bg-black-gradient p-1 rounded " : "hover:border-b-2"} `}
 						>
 							<a href={`#${nav.id}`}>{nav.title}</a>
 						</li>
